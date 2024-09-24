@@ -2,7 +2,6 @@ package com.vaalzebub.next.to.videoapp.presentation.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vaalzebub.next.to.videoapp.data.dto.VideoDto
 import com.vaalzebub.next.to.videoapp.domain.model.VideoModel
 import com.vaalzebub.next.to.videoapp.domain.usecase.VideoListUseCase
 import com.vaalzebub.next.to.videoapp.domain.util.onError
