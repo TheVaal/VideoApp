@@ -90,4 +90,13 @@ dependencies {
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.exoplayer.dash)
     implementation(libs.androidx.media3.ui)
+    // Retrofit
+    implementation (libs.retrofit)
+    implementation (libs.gson)
+    implementation (libs.retrofit.converter.gson)
+
+    // Paging
+    implementation (libs.androidx.paging.runtime.ktx)
+    implementation (libs.androidx.paging.compose)
+
 }
