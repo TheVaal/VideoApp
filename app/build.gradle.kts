@@ -94,9 +94,10 @@ dependencies {
     implementation (libs.retrofit)
     implementation (libs.gson)
     implementation (libs.retrofit.converter.gson)
+    implementation (libs.logging.interceptor)
 
-    // Paging
-    implementation (libs.androidx.paging.runtime.ktx)
-    implementation (libs.androidx.paging.compose)
+    // Coil
+    implementation(libs.coil)
+    implementation(libs.coil.compose)
 
 }
