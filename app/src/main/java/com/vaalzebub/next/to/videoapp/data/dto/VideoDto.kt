@@ -17,8 +17,6 @@ data class VideoDto(
     val user: UserDto,
     @SerializedName("video_files")
     val videoFiles: List<VideoFileDto>,
-    @SerializedName("video_pictures")
-    val videoPictures: List<VideoPictureDto>,
     @SerializedName("width")
     val width: Int
 )

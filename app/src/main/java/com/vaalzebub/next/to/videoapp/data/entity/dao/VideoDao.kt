@@ -1,6 +1,5 @@
 package com.vaalzebub.next.to.videoapp.data.entity.dao
 
-import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.Upsert
@@ -17,11 +16,8 @@ interface VideoDao {
     fun getVideos(): Flow<List<VideoEntity>>
 
     @Query("SELECT * FROM videos WHERE id = :id")
-    fun getVideoById(id: Long): Flow<VideoEntity>
+    fun getVideoById(id: Int): Flow<VideoEntity>
 
     @Query("DELETE FROM videos")
     suspend fun clearAll()
-
-    @Query("SELECT * FROM videos")
-    fun pagingSource(): PagingSource<Int, VideoEntity>
 }
