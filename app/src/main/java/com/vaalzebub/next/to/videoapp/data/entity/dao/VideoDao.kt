@@ -20,4 +20,8 @@ interface VideoDao {
 
     @Query("DELETE FROM videos")
     suspend fun clearAll()
+
+    @Query("SELECT id FROM videos")
+    fun getPlayOrder(): Flow<List<Int>>
+
 }
